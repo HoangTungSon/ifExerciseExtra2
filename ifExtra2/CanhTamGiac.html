@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Canh Tam Giac</title>
+</head>
+<body>
+<script>
+    let a = Number(prompt("Canh a cua tam giac"));
+    let b = Number(prompt("Canh b cua tam giac"));
+    let c = Number(prompt("Canh b cua tam giac"));
+
+
+    if (a > 0 && b > 0 && c > 0) {
+        if ((a + b) > c) {
+            if ((b + c) > a) {
+                if ((c + a) > b) {
+                    alert("Tam giac co cac canh lan luot la = " + a + " " + b + " " + c);
+                } else {
+                    let wrong = alert("Khong tao thanh mot tam giac");
+                }
+            }else {
+                let wrong = alert("Khong tao thanh mot tam giac");
+            }
+        }else {
+            let wrong = alert("Khong tao thanh mot tam giac");
+        }
+    }else {
+        let wrong = alert("Khong tao thanh mot tam giac");
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gia Dien</title>
+</head>
+<body>
+<script>
+    let soDien = Number(prompt("total phone call time in minute"));
+    let giaDien;
+
+    if (soDien <= 20) {
+        giaDien = soDien * 25000;
+    } else if (soDien <= 100) {
+        giaDien = 25000 * 1 + (soDien - 20) * 30000;
+    } else if (soDien <= 150) {
+        giaDien = 25000 * 20 + 30000 * 80 + (soDien - 100) * 40000;
+    } else {
+        giaDien = 25000 * 20 + 30000 * 80 + 40000 * 50 + (soDien - 125) * 50000;
+    }
+    alert("Gia dien = " + giaDien + " VND");
+</script>
+</body>
+</html>
